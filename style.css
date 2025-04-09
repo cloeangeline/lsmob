@@ -34,7 +34,7 @@
             justify-content: center;
             margin-bottom: 5vw;
         }
-        
+
         .logo2 strong {
             font-size: 4vw;
         }
@@ -72,7 +72,7 @@
         }
 
         /*sub header*/
-        
+
         .hero {
             background: url(img/background.png) no-repeat center center;
             background-size: cover;
@@ -112,7 +112,7 @@
 
         }
 
-           /*sub header*/
+        /*sub header*/
 
         .hero h1 {
             font-size: 3vw;
@@ -279,8 +279,7 @@
         .overlay1 .descrip {
             font-size: 1.20vw;
             font-weight: normal;
-            
-
+    
         }
 
         .serv:hover .img {
@@ -309,7 +308,7 @@
             color: #000;
         }
 
-            /*footer*/
+        /*footer*/
 
         .footer {
             padding: 0.3vw;
@@ -335,8 +334,8 @@
             font-size: 1.2vw;
         }
 
-          /*tech and services*/
-        
+        /*tech and services*/
+
         .triangle-mask {
             position: relative;
             flex-direction: column;
@@ -412,8 +411,8 @@
             max-width: 45vw;
         }
 
-            /*services*/
-        
+        /*services*/
+
         .services-container {
             display: grid;
             grid-template-columns: repeat(10, 1fr);
@@ -507,120 +506,120 @@
             margin: 0 auto;
             background: #0000009e;
             width: 100%;
-            max-width: 75.5vw;    
+            max-width: 75.5vw;
         }
-        
+
         table, th, td {
-            border: none;  
+            border: none;
         }
 
         th, td {
             padding: 1vw 1.5vw;
-        } 
+        }
         .prcos {
             max-width: 75.5vw;
             margin: 0 auto;
             text-align: center;
-            border-left: 0.1vw solid white; 
-            border-right: 0.1vw solid white; 
-            font-family: sans-serif;
-            padding: 1vw 8vw;
-           
-            border-top-left-radius: 3vw;
-            border-top-right-radius: 3vw;    
-        }
-        .prcos th {
-            font-size: 3vw;
-        }
-        
-        .prco {
-            max-width: 75.5vw;
-            margin: 0vw auto; 
-            border-left: 0.1vw solid white; 
+            border-left: 0.1vw solid white;
             border-right: 0.1vw solid white;
             font-family: sans-serif;
-            font-size: 1.1vw; 
-            padding: 1vw 5vw;
-            border-bottom-left-radius: 3vw;
-            border-bottom-right-radius: 3vw;
-            margin-bottom: 5vw;
-        }
-        
-        /* rural and urban place */
-        
-        .places {
-            background-color: #0000009e;
-            color: white;
-            padding: 2vw;
-            text-align: center;
-        }
+            padding: 1vw 8vw;
 
-        .title {
-            font-size: 1.5vw;
-            letter-spacing: auto;
-            font-weight: bold;
-            margin-bottom: 3vw;
+            border-top-left-radius: 3vw;
+            border-top-right-radius: 3vw;
         }
+            .prcos th {
+                font-size: 3vw;
+            }
 
-        .content-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2vw;
-            transition: all 0.3s ease;
-        }
+            .prco {
+                max-width: 75.5vw;
+                margin: 0vw auto;
+                border-left: 0.1vw solid white;
+                border-right: 0.1vw solid white;
+                font-family: sans-serif;
+                font-size: 1.1vw;
+                padding: 1vw 5vw;
+                border-bottom-left-radius: 3vw;
+                border-bottom-right-radius: 3vw;
+                margin-bottom: 5vw;              
+            }
 
-        .place {
-            background-color: white;
-            color: #27375C;
-            border-radius: 2vw;
-            padding: 1vw;
-            width: 43vw;
-            transition: all 0.3s ease;
-        }
+            /* rural and urban place */
 
-        .place img {
-            width: 100%;
-            height: 20vw;
-            object-fit: cover;
-            border-radius: 1vw;
-        }
+            .places {
+                background-color: #0000009e;
+                color: white;
+                padding: 2vw;
+                text-align: center;
+            }
 
-        
-        .card-title {
-            font-weight: bold;
-            margin-top: 1vw;
-            margin-bottom: 1vw;
-            font-size: 1.5vw;
-            
-        }
+            .title {
+                font-size: 1.5vw;
+                letter-spacing: auto;
+                font-weight: bold;
+                margin-bottom: 3vw;
+            }
 
-        .description {
-            font-size: 1.1vw;
-            letter-spacing: 0.1vw;
-        }
+            .content-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2vw;
+                transition: all 0.3s ease;
+            }
 
-        .arrows {
-            font-size: 5vw;
-            cursor: pointer;
-            margin: 0 5vw;
-        }
+            .place {
+                background-color: white;
+                color: #27375C;
+                border-radius: 2vw;
+                padding: 1vw;
+                width: 43vw;
+                transition: all 0.3s ease;
+            }
 
-        .arrows button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 3vw;
-            cursor: pointer;
-            padding: 1vw;
-            transition: transform 0.2s ease;
-        }
+            .place img {
+                width: 100%;
+                height: 20vw;
+                object-fit: cover;
+                border-radius: 1vw;
+            }
 
-        .arrows button:hover {
-            transform: scale(1.2);
-            color: #5da3ff;
-        }
 
-        .hidden {
-            display: none;
-        }
+            .card-title {
+                font-weight: bold;
+                margin-top: 1vw;
+                margin-bottom: 1vw;
+                font-size: 1.5vw;
+
+            }
+
+            .description {
+                font-size: 1.1vw;
+                letter-spacing: 0.1vw;
+            }
+
+            .arrows {
+                font-size: 5vw;
+                cursor: pointer;
+                margin: 0 5vw;
+            }
+
+            .arrows button {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 3vw;
+                cursor: pointer;
+                padding: 1vw;
+                transition: transform 0.2s ease;
+            }
+
+            .arrows button:hover {
+                transform: scale(1.2);
+                color: #5da3ff;
+            }
+
+            .hidden {
+                display: none;
+            }
