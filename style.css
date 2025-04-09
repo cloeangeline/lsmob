@@ -1,14 +1,16 @@
         body {
-            margin: 0;
+            margin: 0vw;
             font-family: Arial, sans-serif;
             background-color: #03071b;
             overflow-x: hidden;
 
         }
 
+        /*header*/
+
         .navbar {
             background-color: #090f283b;
-            padding: 10px 20px;
+            padding: 0.8vw 1vw;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -17,60 +19,62 @@
         .logo {
             display: flex;
             align-items: center;
-            font-size: 20px;
+            font-size: 1.3vw;
             font-weight: bold;
             color: #4f88d3;
         }
 
         .logo2 {
-            margin-top: 50px;
+            margin-top: 3vw;
             display: flex;
             text-align: left;
-            font-size: 50px;
+            font-size: 3.5vw;
             font-weight: bold;
             color: #4f88d3;
             justify-content: center;
-            margin-bottom: 80px;
+            margin-bottom: 5vw;
 
 
         }
 
         .logo2 strong {
-            font-size: 75px;
+            font-size: 4vw;
         }
 
         .logo2 .img2 {
-            height: 150px;
-            border-right: 5px solid rgba(255, 255, 255, 0.93);
-            margin-right: 20px;
-            padding-right: 20px;
-            padding: 20px;
+            height: 10vw;
+            border-right: 0.2vw solid rgba(255, 255, 255, 0.93);
+            margin-right: 2vw;
+            padding-right: 2vw;
+            padding: 2vw;
 
         }
 
         .logo img {
             display: block;
-            height: 50px;
+            height: 3vw;
 
         }
 
         .nav-links {
             list-style: none;
-            padding: 0;
-            margin: 0;
+            padding: 0vw;
+            margin: 0vw;
             display: flex;
         }
 
         .nav-links li {
-            margin: 0 15px;
+            margin: 0vw 1vw;
         }
 
         .nav-links a {
             color: #ffffff;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 1vw;
         }
 
+        /*sub header*/
+        
         .hero {
             background: url(img/background.png) no-repeat center center;
             background-size: cover;
@@ -80,19 +84,21 @@
             align-items: center;
             text-align: center;
             height: 50vh;
-            border-bottom: 20px solid #0b122e;
-            border-bottom-width: 20px;
+            border-bottom: 1vw solid #0b122e;
+            border-bottom-width: 1vw;
             filter: brightness(20%);
             filter: contrast(130%);
-            box-shadow: 10px 10px 30px 5px rgb(33, 33, 33) inset
+            box-shadow: 1vw 1vw 2vw 0.5vw rgb(33, 33, 33) inset;
         }
+
+        /*vid 5g*/
 
         .vid {
             position: relative;
             width: 100%;
             height: 80vh;
             overflow: hidden;
-            box-shadow: 0px 0px 40px 20px rgb(0, 0, 0);
+            box-shadow: 0vw 0vw 2vw 2vw rgb(0, 0, 0);
 
         }
 
@@ -108,52 +114,59 @@
 
         }
 
+           /*sub header*/
 
         .hero h1 {
-            font-size: 50px;
-            font-weight: 600;
+            font-size: 3vw;
             color: rgba(255, 255, 255, 0.678);
         }
 
         .hero p {
-            font-size: 20px;
+            font-size: 1.5vw;
             color: rgba(255, 255, 255, 0.93);
         }
 
-        .about {
-            text-align: center;
-            font-size: 20px;
-            color: rgba(255, 255, 255, 0.93);
-            border-radius: 10px;
+        
 
-        }
-
+        /*who we are*/
 
         .container1 {
-            padding: 30px;
+            padding: 2vw;
             text-align: center;
             background: #0c1538d2;
             color: rgba(255, 255, 255, 0.93);
-            margin-top: 20px;
+            margin-top: 2vw;
 
         }
 
+        .container1 h1 {
+            font-size: 2.5vw;
+        }
+
+        .container1 p {
+            font-size: 1.2vw;
+        }
+
+        /*experience*/
 
         .exp {
-            padding: 20px;
+            padding: 2vw;
             background-color: #0000009e;
-            margin: -30px;
+            margin: -2vw;
 
         }
 
-        .exp h1 p {
-            padding-bottom: 20px;
+        .exp h1 {
+            font-size: 2.5vw;
+        }
+        .exp p {
+            font-size: 2.0vw;
         }
 
         .image-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 2vw;
             justify-content: center;
         }
 
@@ -161,15 +174,14 @@
             position: relative;
             display: inline-block;
             overflow: hidden;
-            border-radius: 10px;
+            border-radius: 1vw;
 
         }
 
         .image-box img {
-            height: 250px;
-            width: 350px;
-            border-radius: 10px;
-            box-shadow: 10px 10px 30px 5px rgb(33, 33, 33) inset;
+            height: 18vw;
+            width: 25vw;
+            border-radius: 1vw;
             transition: 0.3s ease;
 
 
@@ -178,16 +190,16 @@
 
         .overlay {
             position: absolute;
-            top: 0;
+            top: 0vw;
             height: 100%;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 1vw;
             background: rgba(0, 0, 0, 0.6);
             color: white;
             display: flex;
             flex-direction: column;
-            gap: 95px;
-            font-size: 15px;
+            gap: 3vw;
+            font-size: 5vw;
             font-weight: bold;
             text-align: left;
             justify-content: center;
@@ -199,16 +211,16 @@
 
 
         .overlay .title {
-            font-size: 25px;
+            font-size: 2vw;
             font-weight: bold;
-            margin-left: 20px;
+            margin-left: 1vw;
 
         }
 
         .overlay .description {
-            font-size: 15px;
+            font-size: 1.10vw;
             font-weight: normal;
-            margin: 10px;
+            margin: 0.73vw;
             align-items: center;
         }
 
@@ -217,20 +229,14 @@
 
         }
 
-
-
-
+        /*service-read more*/
 
         .ser {
-            padding: 15px;
+            padding: 1vw;
             background-color: #0000005d;
-
-            margin-top: 150px;
+            margin-top: 5vw;
             position: relative;
-            margin-bottom: 30px;
-
-
-
+            margin-bottom: 0vw;
 
         }
 
@@ -238,8 +244,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding-top: 10px;
-            padding-bottom: 20px;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
 
         }
 
@@ -247,47 +253,48 @@
             position: relative;
             display: inline-block;
             overflow: hidden;
-            border-radius: 10px;
+            border-radius: 1vw;
         }
 
         .img {
-            height: 230px;
-            width: 1200px;
-            border-radius: 10px;
-            box-shadow: 10px 10px 30px 5px rgb(33, 33, 33) inset;
+            height: 16vw;
+            width: 85vw;
+            border-radius: 1vw;
             transition: 0.3s ease;
             object-fit: cover;
         }
 
+        
+        
         .overlay1 {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 0vw;
+            left: 0vw;
             height: 100%;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 1vw;
             background: rgba(0, 0, 0, 0.5);
             color: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 25px;
-            padding-left: 20px;
+            gap: 2vw;
+            padding-left: 2vw;
             transition: 0.3s ease;
 
         }
 
         .overlay1 .titlee {
-            font-size: 25px;
+            font-size: 2.5vw;
             font-weight: bold;
-            margin-top: 5px;
+            margin-top: 2vw;
 
         }
 
         .overlay1 .descrip {
-            font-size: 15px;
+            font-size: 1.20vw;
             font-weight: normal;
-            margin-bottom: 40px;
+            
 
         }
 
@@ -302,14 +309,14 @@
 
         .read-more-btn {
             display: inline-block;
-            padding: 8px 16px;
+            padding: 0.8vw 1vw;
             color: #ffffff;
             text-decoration: none;
-            border: 1px solid #ddd;
-            border-radius: 10px;
+            border: 0.1vw solid #ddd;
+            border-radius: 1vw;
             font-weight: bold;
             transition: background 0.3s ease;
-            margin-left: 1000px;
+            margin-left: 73vw;
         }
 
         .read-more-btn:hover {
@@ -317,17 +324,10 @@
             color: #000;
         }
 
-
-
-
-
-
-
-
-
+            /*footer*/
 
         .footer {
-            padding: 3px;
+            padding: 0.3vw;
             background: rgb(0, 0, 0);
         }
 
@@ -338,24 +338,26 @@
         }
 
         .logo3 .img3 {
-            height: 40px;
-            padding: 15px;
-            margin-right: 130px;
+            height: 3vw;
+            padding: 1vw;
+            margin-right: 10vw;
 
 
         }
 
         .logo3 p {
             text-align: center;
-
             color: white;
-            max-width: 900px;
+            max-width: 65vw;
+            font-size: 1.2vw;
         }
 
+          /*tech and services*/
+        
         .triangle-mask {
             position: relative;
             flex-direction: column;
-            height: 650px;
+            height: 50vw;
             background-image: url('img/servs.jpg');
             background-size: cover;
             background-position: center;
@@ -363,8 +365,8 @@
             -webkit-clip-path: polygon(100% 0%, 100%, 0% 100%);
             overflow: hidden;
             object-fit: cover;
-            border-bottom: 20px solid #030612;
-            border-bottom-width: 15px;
+            border-bottom: 2vw solid #030612;
+            border-bottom-width: 1vw;
             filter: contrast(110%);
             filter: brightness(50%);
 
@@ -373,10 +375,10 @@
 
         .small {
             position: absolute;
-            top: 100px;
-            left: 50px;
+            top: 8vw;
+            left: 3.6vw;
             color: #4f88d3;
-            font-size: 20px;
+            font-size: 1.5vw;
             font-family: Arial, sans-serif;
             font-weight: bold;
             display: flex;
@@ -385,10 +387,10 @@
 
         .text h1 {
             position: absolute;
-            top: 130px;
-            left: 50px;
+            top: 10vw;
+            left: 3.6vw;
             color: rgb(255, 255, 255);
-            font-size: 50px;
+            font-size: 3.5vw;
             font-family: Arial, sans-serif;
             font-weight: bold;
             display: flex;
@@ -398,10 +400,10 @@
         .text p {
 
             position: absolute;
-            top: 210px;
-            left: 50px;
+            top: 15vw;
+            left: 3.6vw;
             color: rgb(255, 255, 255);
-            font-size: 30px;
+            font-size: 2vw;
             font-family: Arial, sans-serif;
             font-weight: bold;
             display: flex;
@@ -412,26 +414,27 @@
 
 
             color: rgba(255, 255, 255, 0.93);
-            margin-top: 10px;
+            margin-top: 1vw;
             display: flex;
-            max-width: 1000px;
+            max-width: 70vw;
             align-items: center;
-            padding: 50px;
+            padding: 3vw;
             margin-left: auto;
             margin-right: auto;
         }
 
         .matters h1 {
-            font-size: 45px;
-            margin-right: 20px;
+            font-size: 3vw;
+            margin-right: 2vw;
         }
 
         .matters p {
-            font-size: 20px;
-            max-width: 600px;
+            font-size: 1.5vw;
+            max-width: 45vw;
         }
 
-
+            /*services*/
+        
         .services-container {
             display: grid;
             grid-template-columns: repeat(10, 1fr);
@@ -505,22 +508,20 @@
 
         /* pros and cons */
         .pc {
-            padding: 10px;
+            padding: 0.1vw;
             background-color: #0000009e;
-            position: relative;
-            margin-top: 100px;
-            margin-bottom: 50px;
+            margin-top: 5vw;
+            margin-bottom: 5vw;
 
         }
 
         .pc p {
             color: white;
-            font-size: 45px;
+            font-size: 3vw;
             font-family: sans-serif;
             text-align: center;
-            top: 10px;
-            left: 35px;
-            margin: 20px;
+            
+          
 
 
         }
@@ -528,127 +529,122 @@
         table {
             justify-content: center;
             color: white;
-            
             margin: 0 auto;
             background: #0000009e;
-            
-            
+            width: 100%;
+            max-width: 75.5vw;
             
             
             
         }
         
         table, th, td {
-            border: none;
-            
-            
+            border: none;  
         }
 
         th, td {
-            padding: 10px;
-        }
-        
-        
+            padding: 1vw 1.5vw;
+        } 
         .prcos {
-            max-width: 1000px;
+            max-width: 75.5vw;
             margin: 0 auto;
             text-align: center;
-            border-left: 2px solid white; 
-            border-right: 2px solid white; 
+            border-left: 0.1vw solid white; 
+            border-right: 0.1vw solid white; 
             font-family: sans-serif;
-            padding: 20px; 
+            padding: 1vw 8vw;
            
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+            border-top-left-radius: 3vw;
+            border-top-right-radius: 3vw;
 
             
             
             
         }
         .prcos th {
-            font-size: 30px;
+            font-size: 3vw;
         }
         
         .prco {
-            max-width: 1000px;
-            margin: 0 auto;
-            border-left: 2px solid white; 
-            border-right: 2px solid white;
+            max-width: 75.5vw;
+            margin: 0vw auto; 
+            border-left: 0.1vw solid white; 
+            border-right: 0.1vw solid white;
             font-family: sans-serif;
-            font-size: 15px; 
-            padding: 20px; 
-            
-            padding: 40px 40px;
-            
-            border-bottom-left-radius: 30px;
-            border-bottom-right-radius: 30px;
-            margin-bottom: 50px;
+            font-size: 1.1vw; 
+            padding: 1vw 5vw;
+            border-bottom-left-radius: 3vw;
+            border-bottom-right-radius: 3vw;
+            margin-bottom: 5vw;
         }
-
-        /* pros and cons */
-
+        
+        /* rural and urban place */
+        
         .places {
             background-color: #0000009e;
             color: white;
-            padding: 40px 0;
+            padding: 2vw;
             text-align: center;
         }
 
         .title {
-            font-size: 20px;
-            letter-spacing: 2px;
+            font-size: 1.5vw;
+            letter-spacing: auto;
             font-weight: bold;
-            margin-bottom: 30px;
+            margin-bottom: 3vw;
         }
 
         .content-wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 50px;
+            gap: 2vw;
             transition: all 0.3s ease;
         }
 
         .place {
             background-color: white;
             color: #27375C;
-            border-radius: 10px;
-            padding: 20px;
-            width: 400px;
+            border-radius: 2vw;
+            padding: 1vw;
+            width: 43vw;
             transition: all 0.3s ease;
         }
 
         .place img {
             width: 100%;
-            height: 250px;
+            height: 20vw;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 1vw;
         }
 
-
-        .card1-title {
+        
+        .card-title {
             font-weight: bold;
-            margin-top: 10px;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            font-size: 1.5vw;
+            
         }
 
         .description {
-            font-size: 12px;
-            letter-spacing: 1px;
+            font-size: 1.1vw;
+            letter-spacing: 0.1vw;
         }
 
         .arrows {
-            font-size: 30px;
+            font-size: 5vw;
             cursor: pointer;
-            margin: 0 10px;
+            margin: 0 5vw;
         }
 
         .arrows button {
             background: none;
             border: none;
             color: white;
-            font-size: 40px;
+            font-size: 3vw;
             cursor: pointer;
-            padding: 10px;
+            padding: 1vw;
             transition: transform 0.2s ease;
         }
 
