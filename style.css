@@ -33,10 +33,8 @@
             color: #4f88d3;
             justify-content: center;
             margin-bottom: 5vw;
-
-
         }
-
+        
         .logo2 strong {
             font-size: 4vw;
         }
@@ -126,8 +124,6 @@
             color: rgba(255, 255, 255, 0.93);
         }
 
-        
-
         /*who we are*/
 
         .container1 {
@@ -159,6 +155,7 @@
         .exp h1 {
             font-size: 2.5vw;
         }
+
         .exp p {
             font-size: 2.0vw;
         }
@@ -175,7 +172,6 @@
             display: inline-block;
             overflow: hidden;
             border-radius: 1vw;
-
         }
 
         .image-box img {
@@ -183,8 +179,6 @@
             width: 25vw;
             border-radius: 1vw;
             transition: 0.3s ease;
-
-
         }
 
 
@@ -203,10 +197,6 @@
             font-weight: bold;
             text-align: left;
             justify-content: center;
-
-
-
-
         }
 
 
@@ -214,7 +204,6 @@
             font-size: 2vw;
             font-weight: bold;
             margin-left: 1vw;
-
         }
 
         .overlay .description {
@@ -237,7 +226,6 @@
             margin-top: 5vw;
             position: relative;
             margin-bottom: 0vw;
-
         }
 
         .serv-container {
@@ -246,7 +234,6 @@
             justify-content: center;
             padding-top: 1vw;
             padding-bottom: 1vw;
-
         }
 
         .serv {
@@ -264,8 +251,6 @@
             object-fit: cover;
         }
 
-        
-        
         .overlay1 {
             position: absolute;
             top: 0vw;
@@ -341,8 +326,6 @@
             height: 3vw;
             padding: 1vw;
             margin-right: 10vw;
-
-
         }
 
         .logo3 p {
@@ -369,8 +352,6 @@
             border-bottom-width: 1vw;
             filter: contrast(110%);
             filter: brightness(50%);
-
-
         }
 
         .small {
@@ -411,8 +392,6 @@
 
 
         .matters {
-
-
             color: rgba(255, 255, 255, 0.93);
             margin-top: 1vw;
             display: flex;
@@ -520,10 +499,6 @@
             font-size: 3vw;
             font-family: sans-serif;
             text-align: center;
-            
-          
-
-
         }
 
         table {
@@ -532,10 +507,7 @@
             margin: 0 auto;
             background: #0000009e;
             width: 100%;
-            max-width: 75.5vw;
-            
-            
-            
+            max-width: 75.5vw;    
         }
         
         table, th, td {
@@ -555,11 +527,7 @@
             padding: 1vw 8vw;
            
             border-top-left-radius: 3vw;
-            border-top-right-radius: 3vw;
-
-            
-            
-            
+            border-top-right-radius: 3vw;    
         }
         .prcos th {
             font-size: 3vw;
@@ -652,7 +620,6 @@
             transform: scale(1.2);
             color: #5da3ff;
         }
-
 
         .hidden {
             display: none;
