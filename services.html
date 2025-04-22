@@ -18,8 +18,8 @@
             </div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">HOME</a></li> |
-            <li><a href="services.html">SERVICES</a></li> |
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
             <li><a href="#">CONTACT</a></li>
         </ul>
     </nav>
@@ -287,9 +287,9 @@
         <p>Pros and Cons</p>
     </div>
 
+    <table class="prco">
 
-    <table class="prcos">
-        <tr>
+        <tr class="prcos">
             <th>Pros</th>
             <th>Cons</th>
         </tr>
@@ -302,10 +302,8 @@
                 limited initial coverage in rural areas, and potential interference with existing networks. There are
                 also concerns over security, privacy, and the long-term sustainability of the technology.</td>
         </tr>
-    </table>
 
 
-    <table class="prco">
         <tr>
             <th>✓ Ultra-Fast Speeds</th>
             <th>✗ High Infrastructure Costs</th>
@@ -343,6 +341,20 @@
                 data security, privacy, and the vulnerability of connected systems.</td>
         </tr>
     </table>
+
+    <div class="vid-container">
+        <div class="vid-title">
+            Development in 5G Technology for gaming industries, video streaming, virtual reality, and better high
+            quality communication.
+        </div>
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/iQeaK0NGMnA?loop=1&rel=0&iv_load_policy=3&fs=0&color=white&controls=0&playlist=iQeaK0NGMnA"
+            title="What is 5G? | How 5G Works? | 5G: The Next-Gen Network" frameborder="0" class="vid-source">
+        </iframe>
+    </div>
+
+
 
     <div class="places">
         <div class="title">5G TECHNOLOGY IN RURAL/URBAN AREA</div>
@@ -389,35 +401,33 @@
                     As a developing area in Rizal Province, Antipolo City combines urban living
                     with natural attractions. The rollout of 5G in Antipolo would enhance tourism experiences through
                     AR/VR apps and improve telehealth, education, and connectivity in more remote or elevated locations.
-                    5G can bridge the urban and rural digital gap by providing better internet access for households, schools, and
+                    5G can bridge the urban and rural digital gap by providing better internet access for households,
+                    schools, and
                     local enterprises.
                 </div>
             </div>
         </div>
+                <div class="arrows">
+                    <button onclick="showPrev()">&#8592</button>
+                    <button onclick="showNext()">&#8594</button>
+                </div>
+            </div>
 
-        <div class="arrows">
-            <button onclick="showPrev()">&#8592</button>
-            <button onclick="showNext()">&#8594</button>
-        </div>
-    </div>
+            <script>
+                let current = 1;
 
-    <script>
-        let current = 1;
+                function showNext() {
+                    document.getElementById('content1').classList.add('hidden');
+                    document.getElementById('content2').classList.remove('hidden');
+                }
 
-        function showNext() {
-            document.getElementById('content1').classList.add('hidden');
-            document.getElementById('content2').classList.remove('hidden');
-        }
-
-        function showPrev() {
-            document.getElementById('content2').classList.add('hidden');
-            document.getElementById('content1').classList.remove('hidden');
-        }
-    </script>
+                function showPrev() {
+                    document.getElementById('content2').classList.add('hidden');
+                    document.getElementById('content1').classList.remove('hidden');
+                }
+            </script>
 
 </html>
-
-</div>
 
 <section class="footer">
 
