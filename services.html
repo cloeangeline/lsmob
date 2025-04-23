@@ -12,7 +12,7 @@
     <nav class="navbar">
         <div class="logo">
             <img src="img/Lsmob.png" alt="LSMOB LOGO">
-            <div style="margin-left: 10px;">
+            <div style="margin-left: 1vw;">
                 <strong>5G</strong><br>
                 <span>TECHNOLOGY</span>
             </div>
@@ -20,7 +20,7 @@
         <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="services.html">SERVICES</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -44,6 +44,158 @@
         </p>
     </div>
 
+   
+
+    <!-- for arrows and services card -->
+    <div class="services-wrapper">
+        <h1 id="pageTitle">Our Services in Education</h1>
+    
+    <div class="arrow arrow-left" onclick="changePage(-1)">&#10094;</div>
+
+<!-- Container where cards are inserted -->
+    <div class="services-container" id="services">
+      <!-- Content dynamically inserted -->
+    </div>
+
+    <div class="arrow arrow-right" onclick="changePage(1)">&#10095;</div>
+  </div>
+
+  <!-- modal for read more content or description -->
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+
+
+  <script>
+    const modal = document.getElementById('modal'); // modal box
+    const modalContent = document.getElementById('modalContent'); //modal content
+    const servicesContainer = document.getElementById('services'); // where the cards will appear
+    const pageTitle = document.getElementById('pageTitle'); //title at the top
+
+
+    // pages data 
+    const pages = [
+  {
+    title: 'Our Services in Education',
+    cards: [
+      {
+        title: 'Learning Continuity',
+        image: 'img/monica1.gif',
+        content: `
+          <h2>5G for Learning Continuity</h2> 
+          <ul>
+            <li>Failover to 5G for critical applications and internet access</li>
+            <li>Cloud management for always-on support</li>
+          </ul>
+          <p>When council workers dug up the fibre link outside the main campus of a leading private school in
+          Melbourne, there was a total loss of internet access for more than 24 hours with serious impact on
+          teaching and learning outcomes.</p>
+          <p>MobileCorp has since deployed a 5G wireless failover solution to provide link diversity and protect
+          against future outages.</p>
+          <p>We utilized a Cradlepoint 5G edge router with intelligent traffic prioritisation and cloud management
+          to automatically failover to cellular should the dark fibre link be compromised.</p>
+
+        `
+      },
+
+          {
+            title: 'Anywhere Classroom',
+            image: 'img/hp.gif',
+            content: '<h2>5G for the Anywhere Classroom</h2><p>Instantly connect temporary classrooms. Deploy 5G pop-up networks. Turn school buses into mobile WiFi zones. Example from South Bend Community School Corporation\'s connected buses during the pandemic.</p>'
+          },
+          {
+            title: 'Secure Students and Data',
+            image: 'img/wew.gif',
+            content: '<h2>5G for Secure Students and Data</h2><p>Secure PoS payments and data distribution. CCTV camera monitoring for safety. Unified approach for security and compliance.</p>'
+          },
+
+          {
+            title: 'Secure Students and Data',
+            image: 'img/wew.gif',
+            content: '<h2>5G for Secure Students and Data</h2><p>Secure PoS payments and data distribution. CCTV camera monitoring for safety. Unified approach for security and compliance.</p>'
+          },
+
+
+          
+        ]
+      },
+
+      {
+        title: 'Our Services in Business',
+        cards: [
+          {
+            title: '5G Office Connectivity',
+            image: 'img/business1.jpg',
+            content: '<h2>5G Office Connectivity</h2><p>Enhancing office productivity with high-speed 5G networks. Reliable connectivity for seamless collaboration and video conferencing.</p>'
+          },
+          {
+            title: 'Mobile Branch Office',
+            image: 'img/business2.jpg',
+            content: '<h2>Mobile Branch Office</h2><p>Deploy mobile branches with instant connectivity using 5G. Suitable for remote and temporary workspaces.</p>'
+          },
+          {
+            title: '5G for POS Systems',
+            image: 'img/business3.jpg',
+            content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
+          },
+          {
+            title: '5G for POS Systems',
+            image: 'img/business3.jpg',
+            content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
+          }
+
+        ]
+      }
+    ];
+
+    // simula ng page or services
+    let currentPage = 0;
+
+
+    
+    function renderPage(index) {  // tells which page or services to load.
+      pageTitle.textContent = pages[index].title; // change the title at the top based on the title of the selected page
+      servicesContainer.innerHTML = ''; // clears the container so the first cards dont mix or duplicate with the next page
+      pages[index].cards.forEach((card, i) => { // Loop through all the cards in the page.
+        const cardElement = document.createElement('div'); // Creates a new <div> element in the HTML to hold the service card.
+        cardElement.className = 'services-card'; // Gives the new <div> a CSS class called services-card (for styling).
+
+            // adds content inside the card
+        cardElement.innerHTML = `   
+          <img src="${card.image}" alt="${card.title}">
+          <div class="overlay">
+            <h2>${card.title}</h2>
+            <button class="read-more" 
+            onclick="openModal(${i})">Read More</button> 
+          </div>
+        `; // adds content inside the card
+        // ${card.image} and ${card.title} come from the pages data.
+        // onclick="openModal(${i})">Read More</button> - by clicking the read more, it called the openmodal(), it will open a modal with full details of the selected card.
+        servicesContainer.appendChild(cardElement); // adds new card from cardElement, into the services card, so it shows on page.
+      });
+    }
+
+
+
+    function changePage(direction) {
+      currentPage += direction;
+      if (currentPage < 0) currentPage = pages.length - 1;
+      if (currentPage >= pages.length) currentPage = 0;
+      renderPage(currentPage); // Call the renderPage function to update the page
+    }
+
+    function openModal(index) {
+      modalContent.innerHTML = pages[currentPage].cards[index].content;
+      modal.style.display = 'flex';
+    }
+
+    modal.onclick = function(e) {
+      if (e.target === modal) modal.style.display = 'none';
+    };
+
+    renderPage(currentPage);
+  </script>
 
 
     <div class="services-container">
