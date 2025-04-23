@@ -95,7 +95,6 @@
           against future outages.</p>
           <p>We utilized a Cradlepoint 5G edge router with intelligent traffic prioritisation and cloud management
           to automatically failover to cellular should the dark fibre link be compromised.</p>
-
         `
       },
 
@@ -145,8 +144,39 @@
             content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
           }
 
+          
+
         ]
-      }
+      },
+
+      {
+        title: 'Our Services in Healthcare',
+        cards: [
+          {
+            title: '5G Office Connectivity',
+            image: 'img/business1.jpg',
+            content: '<h2>5G Office Connectivity</h2><p>Enhancing office productivity with high-speed 5G networks. Reliable connectivity for seamless collaboration and video conferencing.</p>'
+          },
+          {
+            title: 'Mobile Branch Office',
+            image: 'img/business2.jpg',
+            content: '<h2>Mobile Branch Office</h2><p>Deploy mobile branches with instant connectivity using 5G. Suitable for remote and temporary workspaces.</p>'
+          },
+          {
+            title: '5G for POS Systems',
+            image: 'img/business3.jpg',
+            content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
+          },
+          {
+            title: '5G for POS Systems',
+            image: 'img/business3.jpg',
+            content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
+          }
+
+          
+
+        ]
+      },
     ];
 
     // simula ng page or services
@@ -178,23 +208,23 @@
 
 
 
-    function changePage(direction) {
+    function changePage(direction) { //allows navigation between pages, by updating the page and looping.
       currentPage += direction;
-      if (currentPage < 0) currentPage = pages.length - 1;
-      if (currentPage >= pages.length) currentPage = 0;
+      if (currentPage < 0) currentPage = pages.length - 1; // If it's less than 0, go to the last page
+      if (currentPage >= pages.length) currentPage = 0; // If it's more than the number of pages, go to the first page
       renderPage(currentPage); // Call the renderPage function to update the page
     }
 
-    function openModal(index) {
-      modalContent.innerHTML = pages[currentPage].cards[index].content;
-      modal.style.display = 'flex';
+    function openModal(index) { //  opens a modal (a pop-up) to show more detailed content when a user clicks the "Read More" button on a card. takes an index (which card was clicked) and shows the full content of that card in a modal.
+      modalContent.innerHTML = pages[currentPage].cards[index].content; // It inserts the content into the modal using modalContent.innerHTML.
+      modal.style.display = 'flex'; // displays the modal by setting the modal.style.display to 'flex'.
     }
 
-    modal.onclick = function(e) {
-      if (e.target === modal) modal.style.display = 'none';
+    modal.onclick = function(e) { // when the user clicks outside the modal content (anywhere on the background), the modal will close.
+      if (e.target === modal) modal.style.display = 'none'; // Close the modal if clicked outside the content
     };
 
-    renderPage(currentPage);
+    renderPage(currentPage); // Show the current page when the website first loads
   </script>
 
 
