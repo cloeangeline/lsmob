@@ -44,45 +44,45 @@
         </p>
     </div>
 
-   
+
 
     <!-- for arrows and services card -->
     <div class="services-wrapper">
         <h1 id="pageTitle">Our Services in Education</h1>
-    
-    <div class="arrow arrow-left" onclick="changePage(-1)">&#10094;</div>
 
-<!-- Container where cards are inserted -->
-    <div class="services-container" id="services">
-      <!-- Content dynamically inserted -->
+        <div class="arrow arrow-left" onclick="changePage(-1)">&#10094;</div>
+
+        <!-- Container where cards are inserted -->
+        <div class="services-container" id="services">
+            <!-- Content dynamically inserted -->
+        </div>
+
+        <div class="arrow arrow-right" onclick="changePage(1)">&#10095;</div>
     </div>
 
-    <div class="arrow arrow-right" onclick="changePage(1)">&#10095;</div>
-  </div>
-
-  <!-- modal for read more content or description -->
-  <div class="modal" id="modal">
-    <div class="modal-content" id="modalContent"></div>
-  </div>
+    <!-- modal for read more content or description -->
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
 
 
 
-  <script>
-    const modal = document.getElementById('modal'); // modal box
-    const modalContent = document.getElementById('modalContent'); //modal content
-    const servicesContainer = document.getElementById('services'); // where the cards will appear
-    const pageTitle = document.getElementById('pageTitle'); //title at the top
+    <script>
+        const modal = document.getElementById('modal'); // modal box
+        const modalContent = document.getElementById('modalContent'); //modal content
+        const servicesContainer = document.getElementById('services'); // where the cards will appear
+        const pageTitle = document.getElementById('pageTitle'); //title at the top
 
 
-    // pages data 
-    const pages = [
-  {
-    title: 'Our Services in Education',
-    cards: [
-      {
-        title: 'Learning Continuity',
-        image: 'img/monica1.gif',
-        content: `
+        // pages data 
+        const pages = [
+            {
+                title: 'Our Services in Education',
+                cards: [
+                    {
+                        title: 'Learning Continuity',
+                        image: 'img/monica1.gif',
+                        content: `
           <h2>5G for Learning Continuity</h2> 
           <ul>
             <li>Failover to 5G for critical applications and internet access</li>
@@ -96,103 +96,144 @@
           <p>We utilized a Cradlepoint 5G edge router with intelligent traffic prioritisation and cloud management
           to automatically failover to cellular should the dark fibre link be compromised.</p>
         `
-      },
+                    },
 
-          {
-            title: 'Anywhere Classroom',
-            image: 'img/hp.gif',
-            content: '<h2>5G for the Anywhere Classroom</h2><p>Instantly connect temporary classrooms. Deploy 5G pop-up networks. Turn school buses into mobile WiFi zones. Example from South Bend Community School Corporation\'s connected buses during the pandemic.</p>'
-          },
-          {
-            title: 'Secure Students and Data',
-            image: 'img/wew.gif',
-            content: '<h2>5G for Secure Students and Data</h2><p>Secure PoS payments and data distribution. CCTV camera monitoring for safety. Unified approach for security and compliance.</p>'
-          },
+                    {
+                        title: 'Anywhere Classroom',
+                        image: 'img/hp.gif',
+                        content: `
+                        <h2>5G for the Anywhere Classroom</h2>
+                        <p>5GA smart campus utilizes advanced technology, particularly digital and internet-connected solutions, to enhance the educational environment. This concept revolves around integrating information technology into the fabric of the campus to streamline campus operations, improve learning experiences, and ensure sustainability. At its core, a smart campus is about creating a more efficient, responsive, and adaptive educational ecosystem.</p>
+                    `
+                        },
+                    {
+                        title: 'Secure Students and Data',
+                        image: 'img/wew.gif',
+                        content: `
+                        <h2>5G for Secure Students and Data</h2>
+                        <p>A smart campus utilizes advanced technology, particularly digital and internet-connected solutions, to enhance the educational environment. This concept revolves around integrating information technology into the fabric of the campus to streamline campus operations, improve learning experiences, and ensure sustainability. At its core, a smart campus is about creating a more efficient, responsive, and adaptive educational ecosystem.</p>
+                    `
+                        },
 
-          {
-            title: 'Secure Students and Data',
-            image: 'img/wew.gif',
-            content: '<h2>5G for Secure Students and Data</h2><p>Secure PoS payments and data distribution. CCTV camera monitoring for safety. Unified approach for security and compliance.</p>'
-          },
-
-
-          
-        ]
-      },
-
-      {
-        title: 'Our Services in Business',
-        cards: [
-          {
-            title: '5G Office Connectivity',
-            image: 'img/business1.jpg',
-            content: '<h2>5G Office Connectivity</h2><p>Enhancing office productivity with high-speed 5G networks. Reliable connectivity for seamless collaboration and video conferencing.</p>'
-          },
-          {
-            title: 'Mobile Branch Office',
-            image: 'img/business2.jpg',
-            content: '<h2>Mobile Branch Office</h2><p>Deploy mobile branches with instant connectivity using 5G. Suitable for remote and temporary workspaces.</p>'
-          },
-          {
-            title: '5G for POS Systems',
-            image: 'img/business3.jpg',
-            content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
-          },
-          {
-            title: '5G for POS Systems',
-            image: 'img/business3.jpg',
-            content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
-          }
-
-          
-
-        ]
-      },
-
-      {
-        title: 'Our Services in Healthcare',
-        cards: [
-          {
-            title: '5G Office Connectivity',
-            image: 'img/business1.jpg',
-            content: '<h2>5G Office Connectivity</h2><p>Enhancing office productivity with high-speed 5G networks. Reliable connectivity for seamless collaboration and video conferencing.</p>'
-          },
-          {
-            title: 'Mobile Branch Office',
-            image: 'img/business2.jpg',
-            content: '<h2>Mobile Branch Office</h2><p>Deploy mobile branches with instant connectivity using 5G. Suitable for remote and temporary workspaces.</p>'
-          },
-          {
-            title: '5G for POS Systems',
-            image: 'img/business3.jpg',
-            content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
-          },
-          {
-            title: '5G for POS Systems',
-            image: 'img/business3.jpg',
-            content: '<h2>5G for POS Systems</h2><p>Ensure fast and secure transactions using 5G-enabled POS devices. Enhanced customer experience and reliability.</p>'
-          }
-
-          
-
-        ]
-      },
-    ];
-
-    // simula ng page or services
-    let currentPage = 0;
+                    {
+                        title: 'Secure Students and Data',
+                        image: 'img/OIP.jpg',
+                        content: `
+                        <h2>5G for Secure Students and Data</h2>
+                        <p>5G technology plays a pivotal role in the development of smart campuses. Its high-speed connectivity and low latency are essential for handling the vast amounts of data generated and used by smart campus systems. 5G enables real-time data processing and supports a wide array of internet-connected devices and applications on campus. This robust connectivity is vital for implementing IoT (Internet of Things) solutions, from smart lighting and climate control to sophisticated security systems and enhanced virtual learning environments. The integration of 5G into campus infrastructure is not just about faster internet; it’s about creating a network that can support the diverse and complex needs of a modern educational institution. This includes supporting a multitude of devices simultaneously, from students’ smartphones and laptops to sensors and smart devices across the campus.</p>
+                    `
+                        },
 
 
-    
-    function renderPage(index) {  // tells which page or services to load.
-      pageTitle.textContent = pages[index].title; // change the title at the top based on the title of the selected page
-      servicesContainer.innerHTML = ''; // clears the container so the first cards dont mix or duplicate with the next page
-      pages[index].cards.forEach((card, i) => { // Loop through all the cards in the page.
-        const cardElement = document.createElement('div'); // Creates a new <div> element in the HTML to hold the service card.
-        cardElement.className = 'services-card'; // Gives the new <div> a CSS class called services-card (for styling).
 
-            // adds content inside the card
-        cardElement.innerHTML = `   
+                ]
+            },
+
+            {
+                title: 'Our Services in Business',
+                cards: [
+                    {
+                        title: 'Replace Expensive Wired Cable with Highly Reliable Cellular Connections',
+                        image: 'img/img01.jpg',
+                        content: `
+                        <h2>5G Office Connectivity</h2>
+                        <p>Enhancing office productivity with high-speed 5G networks. Reliable connectivity for seamless collaboration and video conferencing.</p>
+                   `
+                        },
+                    {
+                        title: 'Industries that Will Benefit from 5G Devices',
+                        image: 'img/img2.jpg',
+                        content: `
+                        <h2> Benefit from 5G Devices</h2>
+                        <p>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more performance parameters along the assembly line, collecting more granular information about the performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant incremental refinement, improving quality and productivity and lowering costs.
+Healthcare: When an ambulance is called, every second counts. With 5G, hospital doctors can work with field paramedics to diagnose the patient before and during transport, using high-resolution video and patient telemetry, saving precious time and in some cases lives. In addition, with 5G, telehealth services can be expanded, especially into rural areas.</p>
+                        `
+                    },
+                    {
+                        title: ' 5G Solutions for Business, Industry and Transportation',
+                        image: 'img/img3.jpg',
+                        content: `
+                        <h2>5G Solutions for Business</h2>
+                        <p>Digi is continually innovating and expanding our product line-up to meet the needs of enterprise, commercial, industrial and government businesses. Today, with the rapid expansion of 5G, it is the perfect time to evaluate 5G devices with 4G fallback.
+ 
+Here is a brief introduction to Digi’s 5G solutions:
+Digi EX50 5G: 5G go-to cellular router with 5G/4G dual connectivity and Wi-Fi 6 for organizations requiring fast, reliable, and secure primary or backup enterprise branch office connectivity. This solution is ready for new use cases such as 5G network slicing, SD-WAN, 4K/8K cameras and AR/VR. With an extended operating temperature range, Digi EX50 5G supports a vast range of enterprise and light industrial use cases, including connectivity for enterprise, retail, manufacturing and warehousing.  
+Digi TX64 5G: High performance 5G router with dual redundant communications for complex transit and transportation systems. Digi TX64 5G is FirstNet Ready™, and built with a with powerful quad-core processor, and dual redundant communications for segmented private and public data communication across 5G NR Sub-6 GHz and 4G LTE-Advanced Pro radios – supporting bus, light rail, paratransit and emergency vehicle communications.</p>
+                        `
+                    },
+                    {
+                        title: 'Final Thoughts on 5G for Business and Industry',
+                        image: 'img/img4.jpg',
+                        content: `
+                        <h2>5G for Business and Industry</h2>
+                        <p>The build-out of 5G networks is ongoing, and the applications and use cases that take advantage of the higher performance and throughput of 5G are also rapidly expanding. We will see this space evolving quickly over the coming years as 5G coverage and hardware availability expands to meet the demand.
+ 
+In terms of innovation enablement, the capabilities 5G presents will fuel the development of new products and services, and begin to deliver value quickly. 5G will help enable more efficient energy grids and infrastructure that can run with minimal human intervention. 5G will also enable connected cities, connected buildings, autonomous vehicles, and a transformation in how we deliver and receive healthcare.
+ </p>`
+                    }
+
+
+
+                ]
+            },
+
+            {
+                title: 'Our Services in Healthcare',
+                cards: [
+                    {
+                        title: ' 5G, wearable devices, healthcare',
+                        image: 'img/img11.jpg',
+                        content: `
+                        <h2>5G health Monitoring</h2>
+                        <p>Google is one of the actors in healthcare communication. They have developed a number of smart devices for healthcare monitoring. For example, consider Google’s Fitbit tracker. It measures the oxygen level in our blood to assist us in determining where there may be an indication of significant changes in our fitness and well-being. It estimates the user’s blood oxygen saturation using optical sensors. The LEDs in the sensors have very low power and are programmed to shut down if the Fitbit device freezes or is unable to find a signal. This device incorporates privacy design principles, allowing users to track blood oxygen trends discreetly. Users must give consent in the Fitbit app to enable this feature, and they can deactivate SpO2 tracking on their Fitbit device at any time. Users can also access and manage their SpO2 data using the Fitbit data export and deletion tools in developing wearables on 5G.</p>
+                        `
+                    },
+                    {
+                        title: '5G network for smart continuous monitoring system',
+                        image: 'img/img10.jpg',
+                        content: `
+                        <h2>5G network for Smart</h2>
+                        <p>For continuous smart eHealth monitoring, Lloret et al. [17]. presented a 5G-based infrastructure and protocol. It shows how to build a sophisticated eHealth monitoring system for chronic patients. Measurements are taken on the patient’s body using wearable technology, and the data are processed by the patient’s side using a smartphone. This combines machine learning in Big Data from several hospitals, as well as patient data, to identify and make alarms. Research tests were conducted to mimic traffic flow from a large number of users to the database in order to assess the viability of 5G in our construction. Furthermore, the findings revealed that in order to continually monitor a large number of patients, the 5G network should be used since it has short delays and ensures bandwidth is available for all users. Continuous health condition monitoring was developed by Mishra and Agrawal [18] using 5G cellular channels for 24/7 sensing and transmission of physiological data. They chose pulmonary artery pressure and electrocardiogram as early physiological signals for this activity because they can aid in the diagnosis of cardiovascular diseases, the most common silent killers in modern society. It collected physiological data from a user’s body and sent it to a WBAN coordinator using a wireless body area sensor network. By partnering with the underlying sensor networks, this technology is unique in that it allows cellular system subscribers to have an online, round-the-clock health monitor with very minimal power consumption.</p>
+                        `
+                    },
+                    {
+                        title: 'Wearable Market growth forecast.',
+                        image: 'img/img9.jpg',
+                        content:` 
+                        <h2>5G Wearable Market growth forecast.</h2>
+                        <p>Management of Preventing Infectious Diseases Using 5G
+From a social and humanitarian standpoint, 5G communication and IoT are aimed at expanding communication systems in order to improve people’s quality of life. Control measures based on technology could be a valuable instrument in the fight against infectious disease spread. This research looks at the possibilities of upcoming technology such as 5G for regulating infection transmission, managing infectious disease prevention, and assuring health safety. Using current wireless networking solutions such as 5G, the healthcare sector can deliver a uniform, quick, and continuous service to individuals during the spread of disease. It can assist reinforce the robust communication infrastructure of the smart healthcare system in terms of greater reliability, connection stability, ultramassive accessibility, network scalability, and quick response flexibility, enabling pandemic monitoring and prevention [24,25]. Wireless communication technology can aid in the monitoring of virus spread, as well as the improvement of health, treatment, and socioeconomic sectors. In catastrophe situations, hospitals are quickly overwhelmed by the large number of people seeking treatment. Due to a lack of medical professionals and equipment, as well as a limited patient capacity, maintaining control of the situation is challenging. In fact, in pandemic scenarios, things deteriorate due to the virus’s rapid transmission capacity. Avoiding contact between two people, the person seeking treatment and the physician, is a good strategy to avoid this issue.</p>
+                        `
+                    },
+                    {
+                        title: 'Involvement of robots in surgery.',
+                        image: 'img/img12.jpg',
+                        content: `
+                        <h2>5G and the Future of Wearables</h2>
+                        <p>The ultralow latency of 5G might expand wearables’ capabilities beyond health and wellness in the coming years, bringing new levels of utility to applications that require a remote uplink. Ambient assisted living provided by 5G-powered wearables could provide an effective alternative to live-in care for the elderly. A 5G-enabled wearable that may alert family members or healthcare experts to a dip in blood pressure or an untaken dose of medication could benefit patients’ quality of life and caregivers’ general peace of mind [45,46,47,48,49,50]. In smart homes, wearables may also provide more tailored experiences. Beyond smart locks and learning thermostats, 5G promises to relieve developers from speed constraints and compatibility difficulties, allowing users to enjoy more ambient and intuitive connectivity. It might also pave the way for the next AI-powered virtual assistant—one that caters to every member of the family and gives what they require without prompting. Wearables have the potential to evolve from handy additions to indispensable tools that help people learn more about themselves and their surroundings thanks to 5G. However, for wearables, speed is not the most appealing aspect of 5G. For starters, 5G has significantly reduced latency than 4G. Data transfer time between two places decreases from roughly 20 milliseconds to around 1 millisecond. For most use scenarios, that is near-instant, which is critical for an autonomous car that has to know if its route needs to change right away [51,52,53,54]. The following important categories can be used to categorize major 5G disruptions</p>
+                        `
+                    }
+
+
+
+                ]
+            },
+        ];
+
+        // simula ng page or services
+        let currentPage = 0;
+
+
+
+        function renderPage(index) {  // tells which page or services to load.
+            pageTitle.textContent = pages[index].title; // change the title at the top based on the title of the selected page
+            servicesContainer.innerHTML = ''; // clears the container so the first cards dont mix or duplicate with the next page
+            pages[index].cards.forEach((card, i) => { // Loop through all the cards in the page.
+                const cardElement = document.createElement('div'); // Creates a new <div> element in the HTML to hold the service card.
+                cardElement.className = 'services-card'; // Gives the new <div> a CSS class called services-card (for styling).
+
+                // adds content inside the card
+                cardElement.innerHTML = `   
           <img src="${card.image}" alt="${card.title}">
           <div class="overlay">
             <h2>${card.title}</h2>
@@ -200,269 +241,35 @@
             onclick="openModal(${i})">Read More</button> 
           </div>
         `; // adds content inside the card
-        // ${card.image} and ${card.title} come from the pages data.
-        // onclick="openModal(${i})">Read More</button> - by clicking the read more, it called the openmodal(), it will open a modal with full details of the selected card.
-        servicesContainer.appendChild(cardElement); // adds new card from cardElement, into the services card, so it shows on page.
-      });
-    }
+                // ${card.image} and ${card.title} come from the pages data.
+                // onclick="openModal(${i})">Read More</button> - by clicking the read more, it called the openmodal(), it will open a modal with full details of the selected card.
+                servicesContainer.appendChild(cardElement); // adds new card from cardElement, into the services card, so it shows on page.
+            });
+        }
 
 
 
-    function changePage(direction) { //allows navigation between pages, by updating the page and looping.
-      currentPage += direction;
-      if (currentPage < 0) currentPage = pages.length - 1; // If it's less than 0, go to the last page
-      if (currentPage >= pages.length) currentPage = 0; // If it's more than the number of pages, go to the first page
-      renderPage(currentPage); // Call the renderPage function to update the page
-    }
+        function changePage(direction) { //allows navigation between pages, by updating the page and looping.
+            currentPage += direction;
+            if (currentPage < 0) currentPage = pages.length - 1; // If it's less than 0, go to the last page
+            if (currentPage >= pages.length) currentPage = 0; // If it's more than the number of pages, go to the first page
+            renderPage(currentPage); // Call the renderPage function to update the page
+        }
 
-    function openModal(index) { //  opens a modal (a pop-up) to show more detailed content when a user clicks the "Read More" button on a card. takes an index (which card was clicked) and shows the full content of that card in a modal.
-      modalContent.innerHTML = pages[currentPage].cards[index].content; // It inserts the content into the modal using modalContent.innerHTML.
-      modal.style.display = 'flex'; // displays the modal by setting the modal.style.display to 'flex'.
-    }
+        function openModal(index) { //  opens a modal (a pop-up) to show more detailed content when a user clicks the "Read More" button on a card. takes an index (which card was clicked) and shows the full content of that card in a modal.
+            modalContent.innerHTML = pages[currentPage].cards[index].content; // It inserts the content into the modal using modalContent.innerHTML.
+            modal.style.display = 'flex'; // displays the modal by setting the modal.style.display to 'flex'.
+        }
 
-    modal.onclick = function(e) { // when the user clicks outside the modal content (anywhere on the background), the modal will close.
-      if (e.target === modal) modal.style.display = 'none'; // Close the modal if clicked outside the content
-    };
+        modal.onclick = function (e) { // when the user clicks outside the modal content (anywhere on the background), the modal will close.
+            if (e.target === modal) modal.style.display = 'none'; // Close the modal if clicked outside the content
+        };
 
-    renderPage(currentPage); // Show the current page when the website first loads
-  </script>
-
-
-    <div class="services-container">
-        <div class="services-t">Our Services In Education</div>
-        <div class="services-card">
-            <img src="img/monica1.gif" alt="Learning Continuity">
-            <h2>5G for Learning Continuity</h2>
-            <ul>
-                <li>Failover to 5G for critical applications and internet access</li>
-                <li>Cloud management for always-on support</li>
-            </ul>
-            <p>When council workers dug up the fibre link outside the main campus of a leading private school in
-                Melbourne there was a total loss of internet access for more than 24 hours with serious impact on
-                teaching and learning outcomes.</p>
-            <p>MobileCorp has since deployed a 5G wireless failover solution to provide link diversity and protect
-                against future outages.</p>
-            <p>We utilized a Cradlepoint 5G edge router with intelligent traffic prioritisation and cloud management
-                to
-                automatically failover to cellular should the dark fibre link be compromised.</p>
-        </div>
-
-        <div class="services-card">
-            <img src="img/hp.gif" alt="Anywhere Classroom">
-            <h2>5G for the Anywhere Classroom</h2>
-            <ul>
-                <li>Instantly connect temporary classrooms and demountables</li>
-                <li>Deploy 5G pop-up networks for outdoor classrooms</li>
-                <li>Turn school buses into mobile WiFi hotspots to enable community-based classrooms or homework
-                    zones
-                </li>
-            </ul>
-            <p>In 2020, when the pandemic meant students across the globe were suddenly immersed in home schooling,
-                the
-                South Bend Community School Corporation in the US sent dozens of connected school buses to park in
-                community open spaces so all its students could safely access Wi-Fi.</p>
-            <p>The students Chromebooks were automatically connected to one SSID, while a second SSID was reserved
-                for
-                the general community.</p>
-            <p>Their motto - leave no student offline.</p>
-        </div>
-
-        <div class="services-card">
-            <img src="img/wew.gif" alt="Secure Students and Data">
-            <h2>5G for secure students and data</h2>
-            <ul>
-                <li>Deploy instant secure PoS payments connectivity</li>
-                <li>Securely distribute learning content and sensitive information such as academic data and
-                    personal
-                    student data on a defined need-to-know basis.</li>
-                <li>Real time monitoring of CCTV security cameras allows fast response to ensure student safety</li>
-            </ul>
-            <p>A unified approach to edge security that delivers NSW CSP compliance, application-level control,
-                analytics-rich content filtering, segmentation, and secure device-to-cloud IoT connections.</p>
-        </div>
-
-        <div class="services-card">
-            <img src="img/ha.gif" alt="Immersive Learning">
-            <h2>5G for Immersive Learning</h2>
-            <ul>
-                <li>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used
-                    to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more
-                    performance parameters along the assembly line, collecting more granular information about the
-                    performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant
-                    incremental refinement, improving quality and productivity and lowering costs.
-
-            </ul>
-            <p>A recent study found a 78 percent increase in learning outcomes when students used a VR simulation and a
-                101 percent increase when VR was used in combination with traditional teaching.</p>
-        </div>
-
-    </div>
-
-    <div class="services-container">
-        <div class="services-t">Our Services In Businesses</div>
-        <div class="services-card">
-            <img src="img/img3.jpg" alt="">
-            <h2>5G for Immersive Learning</h2>
-            <ul>
-                <li>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used
-                    to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more
-                    performance parameters along the assembly line, collecting more granular information about the
-                    performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant
-                    incremental refinement, improving quality and productivity and lowering costs.
-                </li>
-                <li>Healthcare: When an ambulance is called, every second counts. With 5G, hospital doctors can work
-                    with field paramedics to diagnose the patient before and during transport, using high-resolution
-                    video and patient telemetry, saving precious time and in some cases lives. In addition, with 5G,
-                    telehealth services can be expanded, especially into rural areas.</li>
-                <li>Retail: 5G technology can be used to expand the use of mobile apps and enable new services that will
-                    attract customers, such as the ability to “try on” clothes using VR and AR dressing rooms.</li>
-
-            </ul>
-
-        </div>
-
-        <div class="services-card">
-            <img src="img/img4.jpg" alt="Immersive Learning">
-            <h2>5G for Immersive Learning</h2>
-            <ul>
-                <li>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used
-                    to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more
-                    performance parameters along the assembly line, collecting more granular information about the
-                    performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant
-                    incremental refinement, improving quality and productivity and lowering costs.
-
-            </ul>
-            <p>A recent study found a 78 percent increase in learning outcomes when students used a VR simulation and a
-                101 percent increase when VR was used in combination with traditional teaching.</p>
-        </div>
-        <div class="services-card">
-            <img src="img/img5.jpg" alt="Immersive Learning">
-            <h2>5G for Immersive Learning</h2>
-            <ul>
-                <li>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used
-                    to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more
-                    performance parameters along the assembly line, collecting more granular information about the
-                    performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant
-                    incremental refinement, improving quality and productivity and lowering costs.
-
-            </ul>
-            <p>A recent study found a 78 percent increase in learning outcomes when students used a VR simulation and a
-                101 percent increase when VR was used in combination with traditional teaching.</p>
-        </div>
-        <div class="services-card">
-            <img src="img/img6.jpg" alt="Immersive Learning">
-            <h2>5G for Immersive Learning</h2>
-            <ul>
-                <li>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used
-                    to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more
-                    performance parameters along the assembly line, collecting more granular information about the
-                    performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant
-                    incremental refinement, improving quality and productivity and lowering costs.
-
-            </ul>
-            <p>A recent study found a 78 percent increase in learning outcomes when students used a VR simulation and a
-                101 percent increase when VR was used in combination with traditional teaching.</p>
-        </div>
-        <div class="services-card">
-            <img src="img/img7.jpg" alt="Immersive Learning">
-            <h2>5G for Immersive Learning</h2>
-            <ul>
-                <li>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used
-                    to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more
-                    performance parameters along the assembly line, collecting more granular information about the
-                    performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant
-                    incremental refinement, improving quality and productivity and lowering costs.
-
-            </ul>
-            <p>A recent study found a 78 percent increase in learning outcomes when students used a VR simulation and a
-                101 percent increase when VR was used in combination with traditional teaching.</p>
-        </div>
-    </div>
+        renderPage(currentPage); // Show the current page when the website first loads
+    </script>
 
 
-    <div class="services-container">
-        <div class="services-t">Our Services In Healthcare</div>
-        <div class="services-card">
-            <img src="img/img8.jpg" alt="Learning Continuity">
-            <h2>5G for Learning Continuity</h2>
-            <ul>
-                <li>Failover to 5G for critical applications and internet access</li>
-                <li>Cloud management for always-on support</li>
-            </ul>
-            <p>When council workers dug up the fibre link outside the main campus of a leading private school in
-                Melbourne there was a total loss of internet access for more than 24 hours with serious impact on
-                teaching and learning outcomes.</p>
-            <p>MobileCorp has since deployed a 5G wireless failover solution to provide link diversity and protect
-                against future outages.</p>
-            <p>We utilized a Cradlepoint 5G edge router with intelligent traffic prioritisation and cloud management
-                to
-                automatically failover to cellular should the dark fibre link be compromised.</p>
-        </div>
 
-        <div class="services-card">
-            <img src="img/img9.jpg" alt="Anywhere Classroom">
-            <h2>5G for the Anywhere Classroom</h2>
-            <ul>
-                <li>Instantly connect temporary classrooms and demountables</li>
-                <li>Deploy 5G pop-up networks for outdoor classrooms</li>
-                <li>Turn school buses into mobile WiFi hotspots to enable community-based classrooms or homework
-                    zones
-                </li>
-            </ul>
-            <p>In 2020, when the pandemic meant students across the globe were suddenly immersed in home schooling,
-                the
-                South Bend Community School Corporation in the US sent dozens of connected school buses to park in
-                community open spaces so all its students could safely access Wi-Fi.</p>
-            <p>The students Chromebooks were automatically connected to one SSID, while a second SSID was reserved
-                for
-                the general community.</p>
-            <p>Their motto - leave no student offline.</p>
-        </div>
-
-        <div class="services-card">
-            <img src="img/img10.jpg" alt="Secure Students and Data">
-            <h2>5G for secure students and data</h2>
-            <ul>
-                <li>Deploy instant secure PoS payments connectivity</li>
-                <li>Securely distribute learning content and sensitive information such as academic data and
-                    personal
-                    student data on a defined need-to-know basis.</li>
-                <li>Real time monitoring of CCTV security cameras allows fast response to ensure student safety</li>
-            </ul>
-            <p>A unified approach to edge security that delivers NSW CSP compliance, application-level control,
-                analytics-rich content filtering, segmentation, and secure device-to-cloud IoT connections.</p>
-        </div>
-
-        <div class="services-card">
-            <img src="img/img11.jpg" alt="Immersive Learning">
-            <h2>5G for Immersive Learning</h2>
-            <ul>
-                <li>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used
-                    to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more
-                    performance parameters along the assembly line, collecting more granular information about the
-                    performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant
-                    incremental refinement, improving quality and productivity and lowering costs.
-
-            </ul>
-            <p>A recent study found a 78 percent increase in learning outcomes when students used a VR simulation and a
-                101 percent increase when VR was used in combination with traditional teaching.</p>
-        </div>
-
-        <div class="services-card">
-            <img src="img/img12.jpg" alt="Immersive Learning">
-            <h2>5G for Immersive Learning</h2>
-            <ul>
-                <li>Manufacturing and light industrial: Smart factories will greatly expand the number of sensors used
-                    to monitor every aspect of the manufacturing process. 5G makes it possible to monitor more
-                    performance parameters along the assembly line, collecting more granular information about the
-                    performance of machines and processes. With the aid of ML and AI, 5G networks will enable constant
-                    incremental refinement, improving quality and productivity and lowering costs.
-
-            </ul>
-            <p>A recent study found a 78 percent increase in learning outcomes when students used a VR simulation and a
-                101 percent increase when VR was used in combination with traditional teaching.</p>
-        </div>
-    </div>
 
 
     <div class="pc">
@@ -589,25 +396,25 @@
                 </div>
             </div>
         </div>
-                <div class="arrows">
-                    <button onclick="showPrev()">&#8592</button>
-                    <button onclick="showNext()">&#8594</button>
-                </div>
-            </div>
+        <div class="arrows">
+            <button onclick="showPrev()">&#8592</button>
+            <button onclick="showNext()">&#8594</button>
+        </div>
+    </div>
 
-            <script>
-                let current = 1;
+    <script>
+        let current = 1;
 
-                function showNext() {
-                    document.getElementById('content1').classList.add('hidden');
-                    document.getElementById('content2').classList.remove('hidden');
-                }
+        function showNext() {
+            document.getElementById('content1').classList.add('hidden');
+            document.getElementById('content2').classList.remove('hidden');
+        }
 
-                function showPrev() {
-                    document.getElementById('content2').classList.add('hidden');
-                    document.getElementById('content1').classList.remove('hidden');
-                }
-            </script>
+        function showPrev() {
+            document.getElementById('content2').classList.add('hidden');
+            document.getElementById('content1').classList.remove('hidden');
+        }
+    </script>
 
 </html>
 

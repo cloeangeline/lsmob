@@ -742,7 +742,7 @@
 
               /* button */
               .read-more {
-                background-color: #28a745;
+                background-color: rgba(0, 0, 0, 0.5);
                 border: none;
                 padding: 10px 15px;
                 color: white;
@@ -794,7 +794,7 @@
 
               /* modal content */
               .modal-content {
-                background-color: rgba(255, 255, 255, 0.1);
+                background-color: rgba(16, 15, 15, 0.979);
                 color: white;
                 padding: 20px;
                 border-radius: 10px;
